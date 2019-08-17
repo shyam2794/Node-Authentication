@@ -7,7 +7,7 @@ const cookieParser = require("cookie-parser");
 //local imports 
 const authRouter = require("../src/routers/authRoute");
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const app = express();
 
 // middlewares
